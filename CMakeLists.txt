@@ -172,3 +172,4 @@ pre_build(${APP_NAME}
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/Resources ${APP_BIN_DIR}/Resources
   )
 
+sdfasd
