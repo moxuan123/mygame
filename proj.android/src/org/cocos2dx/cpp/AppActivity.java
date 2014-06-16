@@ -23,6 +23,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+<<<<<<< HEAD
  ****************************************************************************/
 package org.cocos2dx.cpp;
 
@@ -34,4 +35,12 @@ public class AppActivity extends Cocos2dxActivity {
 	public static void printMemoryInfo() {
 		Log.e("is a bua", "sadfdsfasd");
 	}
+=======
+****************************************************************************/
+package org.cocos2dx.cpp;
+
+import org.cocos2dx.lib.Cocos2dxActivity;
+
+public class AppActivity extends Cocos2dxActivity {
+>>>>>>> f389ddd2247b23a9dcd15f66bb4f71bcdfda868d
 }

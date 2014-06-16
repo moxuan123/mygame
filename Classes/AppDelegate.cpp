@@ -1,5 +1,9 @@
 #include "AppDelegate.h"
+<<<<<<< HEAD
 #include "Splash.h"
+=======
+#include "HelloWorldScene.h"
+>>>>>>> f389ddd2247b23a9dcd15f66bb4f71bcdfda868d
 
 USING_NS_CC;
 
@@ -25,6 +29,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
+<<<<<<< HEAD
 //    director->set
     // create a scene. it's an autorelease object
     auto scene = Splash::scene();
@@ -32,6 +37,14 @@ bool AppDelegate::applicationDidFinishLaunching() {
   
     // run
     director->runWithScene(trScene);
+=======
+
+    // create a scene. it's an autorelease object
+    auto scene = HelloWorld::createScene();
+
+    // run
+    director->runWithScene(scene);
+>>>>>>> f389ddd2247b23a9dcd15f66bb4f71bcdfda868d
 
     return true;
 }
