@@ -24,3 +24,7 @@ proguard/
 
 # Obj
 proj.android/obj/
+
+#armeabi
+armeabi/
+armeabi-v7a/
