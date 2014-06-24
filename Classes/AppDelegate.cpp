@@ -19,7 +19,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     if(!glview) {
         glview = GLView::create("My Game");
         director->setOpenGLView(glview);
-    }
+		director->getOpenGLView()->setFrameSize(400, 640);
+	}
 
     // turn on display FPS
     director->setDisplayStats(true);
@@ -46,7 +47,7 @@ void AppDelegate::applicationDidEnterBackground() {
     Director::getInstance()->stopAnimation();
 
     // if you use SimpleAudioEngine, it must be pause
-    // SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
+    // SimpleAudioEngine::getInstance()-> ();
 }
 
 // this function will be called when the app is active again
