@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "Splash.h"
+#include "Test.h"
 
 USING_NS_CC;
 
@@ -29,6 +30,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // create a scene. it's an autorelease object
     auto scene = Splash::scene();
     TransitionFade* trScene = TransitionFade::create(1.30f, scene, Color3B::WHITE);
+  
+  //TestScene
+  
+//  auto testScene = TestScene::scene();
   
     // run
     director->runWithScene(trScene);

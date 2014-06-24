@@ -7,6 +7,7 @@
 //
 
 #include "Splash.h"
+#include "GameMenu.h"
 USING_NS_CC;
 bool Splash::init()
 {
@@ -35,5 +36,6 @@ Scene* Splash::scene()
 void Splash::callback(float dt)
 {
   log("callback%f",dt);
-  
+  auto scene = GameMenu::scene();
+  Director::getInstance()->replaceScene(scene);
 }
