@@ -21,7 +21,7 @@ bool Splash::init()
   Size size = Director::getInstance()->getVisibleSize();
   spt->setPosition(Point(size.width/2,size.height/2));
   this->addChild(spt);
-  scheduleOnce(schedule_selector(Splash::callback), 3.0f);
+  scheduleOnce(schedule_selector(Splash::callback), 1.0f);
   return true;
 }
 

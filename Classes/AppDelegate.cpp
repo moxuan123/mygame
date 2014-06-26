@@ -37,7 +37,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 //  auto testScene = TestScene::scene();
   
     // run
-    director->runWithScene(trScene);
+    director->runWithScene(scene);
 
     return true;
 }

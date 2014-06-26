@@ -37,13 +37,24 @@ bool GameMenu::init()
   fbTitle->setPosition(originSize.width/2,originSize.height/4);
   this->addChild(fbTitle);
   
-  Sprite* bird = Sprite::create("img/bird1.png");
+  Sprite* bird = Sprite::create();
   bird->setPosition(originSize.width/2,originSize.height/2);
   this->addChild(bird);
   
 //  vect<Animation*> *animations = new vect<Animation*>();
 //  animations->add
-//  Animate* animate = Animation::create(<#const Vector<cocos2d::AnimationFrame *> &arrayOfAnimationFrameNames#>, <#float delayPerUnit#>)
+  Animation* animation = Animation::create();
+  for (int i = 1; i<=3; i++) {
+    char frameName[100] = {0};
+    sprintf(frameName, "img/bird%d.png",i);
+    animation->addSpriteFrameWithFile(frameName);
+    log("img:%s--111:%s",frameName,"hahha");
+  }
+  animation->setDelayPerUnit(0.2f);
+  animation->setRestoreOriginalFrame(false);
+  Animate* animate = Animate::create(animation);
+  auto repeat = RepeatForever::create(animate);
+  bird->runAction(repeat);
   
   return true;
 }
